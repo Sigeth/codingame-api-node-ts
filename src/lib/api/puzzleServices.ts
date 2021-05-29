@@ -26,7 +26,36 @@ export const findProgressByIds = async (ids: number[], userId: number): Promise<
 
 
 /**
+ * Find puzzle informations and player's completion from a "pretty ID" which is a string, found in the URL of the puzzle.
+ * 
+ * ## Requires to log in before.
+ * 
+ * @param {string} puzzlePrettyId - Puzzle's "pretty ID", found in its URL.
+ * @param {number} userId - User ID you want to retrieve the completion
+ */
+
+export const findProgressByPrettyId = async (puzzlePrettyId: string, userId: number): Promise<IPuzzlePrettyProgress> => {
+
+    const cookies: string = getCookies()
+
+    const response = await axios({
+        url: urls.puzzle + "findProgressByPrettyId",
+        method: "post",
+        headers: {
+            "content-type": "application/json;charset=UTF-8",
+            "cookie": cookies
+        },
+        data: [ puzzlePrettyId, userId ]
+    })
+
+    return response["data"]
+}
+
+
+/**
  * Find every minimal puzzle progress from a user. You can also use this to get every puzzles of CodinGame
+ * 
+ * ## Requires to log in before.
  * 
  * @param {number} userId - User ID you want to retrieve the completion
  * 
@@ -89,6 +118,67 @@ type topics = {
     category: string
     value: string
     children: topics[] | []
+}
+
+export interface IPuzzlePrettyProgress {
+    id: number
+    level: string
+    rank: number
+    thumbnailBinaryId: number
+    previewBinaryId: number
+    coverBinaryId: number
+    logoBinaryId: number
+    title: string
+    titlemap: {
+        "1": string,
+        "2": string
+    }
+    description: string
+    statement: string
+    validatorScore: number
+    achievementCount: number
+    doneAchievementCount: number
+    linkedAchievements: linkedAchievement[]
+    forumLink: string
+    solvedCount: number
+    attemptCount: number
+    xpPoints: number
+    feedback: feedbackPuzzle
+    topics: topics[]
+    creationTime: number
+    type: string
+    prettyId: string
+    detailsPageUrl: string
+    replayIds: number[]
+    contentDetails: puzzleDetails
+    communityCreation: boolean
+}
+
+type linkedAchievement = {
+    id: string
+    puzzleId: number
+    title: string
+    description: string
+    points: number
+    progress: number
+    progressMax: number
+    completionTime: number
+    imageBinaryId: number
+    level: string
+    weight: number
+}
+
+type puzzleDetails = {
+    description: string
+    learnDescription: string
+    story: string
+    externalResources: externalResource[]
+}
+
+type externalResource = {
+    publicId: string
+    url: string
+    name: string
 }
 
 export interface IPuzzleMinimalProgress {

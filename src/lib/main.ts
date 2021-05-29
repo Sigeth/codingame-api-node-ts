@@ -29,7 +29,6 @@ export const setCookies = (response: any) => {
 export const getCookies = (): string => {
     try {
         const cookiesStr = fs.readFileSync("./src/config/cookies", "utf-8")
-        console.log(cookiesStr)
         return cookiesStr
     } catch (e){
         console.log(e)
