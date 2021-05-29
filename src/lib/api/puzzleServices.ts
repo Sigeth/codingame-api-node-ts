@@ -1,12 +1,12 @@
 import axios from "axios"
 
-import { urls } from "../main"
+import { getCookies, urls } from "../main"
 
 /**
- * Find puzzle informations and player's completion from an array
+ * Find puzzle informations and player's completion from an array of number IDs.
  * 
  * @param {number[]} ids - Every Puzzle IDs you want to inspect
- * @param {number} userId - The user ID you want to retrieve the completion
+ * @param {number} userId - User ID you want to retrieve the completion
  * 
  */
 
@@ -23,6 +23,33 @@ export const findProgressByIds = async (ids: number[], userId: number): Promise<
 
     return response["data"]
 }
+
+
+/**
+ * Find every minimal puzzle progress from a user. You can also use this to get every puzzles of CodinGame
+ * 
+ * @param {number} userId - User ID you want to retrieve the completion
+ * 
+ */
+
+export const findAllMinimalProgress = async (userId: number): Promise<IPuzzleMinimalProgress[]> => {
+
+    const cookies: string = getCookies()
+
+    const response = await axios({
+        url: urls.puzzle + "findAllMinimalProgress",
+        method: "post",
+        headers: {
+            "content-type": "application/json;charset=UTF-8",
+            "cookie": cookies
+        },
+        data: [ userId ]
+    })
+
+    return response["data"]
+}
+
+
 
 export interface IPuzzleProgress {
     id: number
@@ -62,4 +89,16 @@ type topics = {
     category: string
     value: string
     children: topics[] | []
+}
+
+export interface IPuzzleMinimalProgress {
+    id: number
+    level: string
+    validatorScore: number
+    submitted: boolean
+    creationTime: number
+    rank: number
+    solvedCount: number
+    communityCreation: boolean
+    feedback: feedbackPuzzle
 }
