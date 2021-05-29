@@ -8,7 +8,7 @@ This is a node, so you are supposed to use it with Nodejs.<br>
 To import the module, you need to do this in a command prompt :<br>
 `npm install codingame-api-node-ts`
 
-###Example
+### Example
 This is the code to login to CodinGame
 
 ```js
