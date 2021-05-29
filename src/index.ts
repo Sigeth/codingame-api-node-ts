@@ -1,3 +1,3 @@
-export * from "../src/lib/main"
-export * from "../src/lib/api/auth"
-export * from "../src/lib/api/puzzleServices"
+export * from "./lib/main"
+export * from "./lib/api/auth"
+export * from "./lib/api/puzzleServices"
