@@ -18,7 +18,10 @@ export const setCookies = (response: any) => {
         }
     }).join("")
 
-    fs.writeFile("./src/config/cookies", cookiesStr, function(err: any){
+    const storedCookiesJSON = { cookies: cookiesStr }
+    const storedCookies = JSON.stringify(storedCookiesJSON)
+
+    fs.writeFile("./src/config/cookies.json", storedCookies, function(err: any){
         if (err) {
             return console.log(err)
         }
@@ -28,8 +31,12 @@ export const setCookies = (response: any) => {
 /** @internal */
 export const getCookies = (): string => {
     try {
-        const cookiesStr = fs.readFileSync("./src/config/cookies", "utf-8")
-        return cookiesStr
+        const storedCookies = fs.readFileSync("./src/config/cookies.json", "utf-8")
+
+        const parsedCookies = JSON.parse(storedCookies)
+        const cookies = parsedCookies.cookies
+
+        return cookies
     } catch (e){
         console.log(e)
         return "Error"
