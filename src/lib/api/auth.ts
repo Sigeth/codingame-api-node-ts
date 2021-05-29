@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import { urls } from "../main"
+import { urls, setCookies, getCookies } from "../main"
 
 
 /**
@@ -21,6 +21,8 @@ export const loginCodinGamer = async (email: string, password: string): Promise<
         },
         data: [email, password, true, "CODINGAME"]
     })
+
+    setCookies(response["headers"])
 
     return response["data"]
 }
