@@ -1,5 +1,5 @@
 {
-  "name": "codingame-node-api",
+  "name": "codingame-api-node-ts",
   "version": "1.0.0",
   "description": "",
   "main": "./build/main/index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sigeth/codingame-node-api.git"
+    "url": "git+https://github.com/Sigeth/codingame-api-node-ts.git"
   },
   "keywords": [],
   "author": "Sigeth",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sigeth/codingame-node-api/issues"
+    "url": "https://github.com/Sigeth/codingame-api-node-ts/issues"
   },
-  "homepage": "https://github.com/Sigeth/codingame-node-api#readme",
+  "homepage": "https://github.com/Sigeth/codingame-api-node-ts#readme",
   "devDependencies": {
     "@types/node": "^15.6.1",
     "ava": "^3.15.0",
