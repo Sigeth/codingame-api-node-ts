@@ -11,13 +11,6 @@ test("Login to CodinGame", async t => {
     try {
         const session = await loginCodinGamer(process.env.EMAILTEST!, process.env.PWTEST!)
 
-        console.log(session.xpThresholds[1].rewardLanguages)
-        console.log(session.user.properties.xpConfig)
-        console.log(session.user.properties["privacySettings-codingame"])
-        console.log(session.user.properties.abtesting)
-        console.log(session.user.properties["cookiesBanner-codingame"])
-
-
         t.assert(session.userId === 4365603)
     } catch (e){
         console.log(e)

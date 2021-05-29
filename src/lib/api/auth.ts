@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import { urls, defaultHeaders } from "../main"
+import { urls } from "../main"
 
 
 /**
@@ -11,7 +11,6 @@ import { urls, defaultHeaders } from "../main"
  * 
  */
 
-//
 export const loginCodinGamer = async (email: string, password: string): Promise<ILoginCodinGamer> => {
     
     const response = await axios({
