@@ -1,5 +1,8 @@
 # CodinGame API undocumented
 
+### Current API knowledge and advancement
+To follow how far this package is, you can check the Trello : https://trello.com/b/q5vxDgBO/codingame-endpoints
+
 ### Docs
 You can see every current functions in the src/lib folder. You can see the types and the keys of the results by checking the interface result.
 
