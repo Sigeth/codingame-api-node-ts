@@ -1,0 +1,42 @@
+{
+  "name": "codingame-node-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/main/index.js",
+  "typings": "./build/main/index.d.ts",
+  "module": "./build/main/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sigeth/codingame-node-api.git"
+  },
+  "keywords": [],
+  "author": "Sigeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sigeth/codingame-node-api/issues"
+  },
+  "homepage": "https://github.com/Sigeth/codingame-node-api#readme",
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "ava": "^3.15.0",
+    "dotenv": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "ava": {
+    "files": [
+      "build/main/**/*.spec.js"
+    ],
+    "ignoredByWatcher": [
+      "src/**/*.ts",
+      "build/main/**/*.d.*",
+      "build/main/**/*.spec.d.*"
+    ]
+  }
+}
