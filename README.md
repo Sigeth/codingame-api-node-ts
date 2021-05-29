@@ -1,4 +1,4 @@
-# CodinGame API API undocumented
+# CodinGame API undocumented
 
 ### Docs
 You can see every current functions in the src/lib folder. You can see the types and the keys of the results by checking the interface result.
