@@ -1,10 +1,10 @@
 {
   "name": "codingame-api-node-ts",
   "version": "0.0.3",
-  "description": "",
+  "description": "A CodinGame API node, that permits you to access all of the endpoints of this website. Wrote in TypeScript, so you can previsualize how the response will look like by checking the code.",
   "main": "./build/main/index.js",
   "typings": "./build/main/index.d.ts",
-  "module": "./build/main/index.js",
+  "module": "./build/module/index.js",
   "scripts": {
     "build": "tsc",
     "test": "ava"
@@ -13,9 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/Sigeth/codingame-api-node-ts.git"
   },
-  "keywords": [],
+  "keywords": [ "codingame", "api", "typescript", "endpoints" ],
   "author": "Sigeth",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Sigeth/codingame-api-node-ts/issues"
   },
