@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import { urls, setCookies, getCookies } from "../main"
+import { urls, getCookies } from "../main"
 
 
 /**
@@ -22,9 +22,7 @@ export const loginCodinGamer = async (email: string, password: string): Promise<
         data: [email, password, true, "CODINGAME"]
     })
 
-    setCookies(response["headers"])
-
-    return response["data"]
+    return { ...response["data"], cookies: getCookies(response) }
 }
 
 export interface ILoginCodinGamer {
@@ -46,6 +44,7 @@ export interface ILoginCodinGamer {
     userId: number
     userEmail: string
     impersonated: boolean
+    cookies: string
 }
 
 type codinGamer = {
@@ -159,4 +158,3 @@ type userAbtesting = {
 type userCookiesBanner = {
     seen: boolean
 }
-

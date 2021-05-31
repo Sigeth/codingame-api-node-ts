@@ -71,6 +71,6 @@
   },
   "typedocOptions": {
     "entryPoints": ["src/index.ts"],
-    "out": "build/docs"
+    "out": "docs"
   }
 }

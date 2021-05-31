@@ -30,13 +30,12 @@ export const findProgressByIds = async (ids: number[], userId: number): Promise<
  * 
  * ## Requires to log in before.
  * 
+ * @param {string} cookies - The cookies string that you obtain when you're loggin in with loginSite
  * @param {string} puzzlePrettyId - Puzzle's "pretty ID", found in its URL.
  * @param {number} userId - User ID you want to retrieve the completion
  */
 
-export const findProgressByPrettyId = async (puzzlePrettyId: string, userId: number): Promise<IPuzzlePrettyProgress> => {
-
-    const cookies: string = getCookies()
+export const findProgressByPrettyId = async (cookies: string, puzzlePrettyId: string, userId: number): Promise<IPuzzlePrettyProgress> => {
 
     const response = await axios({
         url: urls.puzzle + "findProgressByPrettyId",
@@ -57,13 +56,12 @@ export const findProgressByPrettyId = async (puzzlePrettyId: string, userId: num
  * 
  * ## Requires to log in before.
  * 
+ * @param {string} cookies - The cookies string that you obtain when you're loggin in with loginSite
  * @param {number} userId - User ID you want to retrieve the completion
  * 
  */
 
-export const findAllMinimalProgress = async (userId: number): Promise<IPuzzleMinimalProgress[]> => {
-
-    const cookies: string = getCookies()
+export const findAllMinimalProgress = async (cookies: string, userId: number): Promise<IPuzzleMinimalProgress[]> => {
 
     const response = await axios({
         url: urls.puzzle + "findAllMinimalProgress",

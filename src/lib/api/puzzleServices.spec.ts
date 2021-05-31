@@ -1,12 +1,23 @@
 import anyTest, { TestInterface } from 'ava'
 
+const fs = require("fs")
+
 import { 
     findProgressByIds,
     findAllMinimalProgress,
     findProgressByPrettyId
     } from "./puzzleServices"
 
-const test = anyTest as TestInterface<{}>
+const test = anyTest as TestInterface<{ cookies: string }>
+
+test.before(async t => {
+    const storedCookies = fs.readFileSync("./src/config/cookies.json", "utf-8")
+
+    const parsedCookies = JSON.parse(storedCookies)
+    const cookies = parsedCookies.cookies
+
+    t.context.cookies = cookies
+})
 
 test("Retrieving infos from several puzzles", async t => {
     try {
@@ -20,7 +31,7 @@ test("Retrieving infos from several puzzles", async t => {
 
 test("Retrieving infos from a puzzle from its pretty ID", async t => {
     try {
-        const puzzlePrettyInfos = await findProgressByPrettyId("onboarding", 4365603)
+        const puzzlePrettyInfos = await findProgressByPrettyId(t.context.cookies, "onboarding", 4365603)
 
         t.assert(puzzlePrettyInfos.id === 43)
     } catch (e){
@@ -30,7 +41,7 @@ test("Retrieving infos from a puzzle from its pretty ID", async t => {
 
 test("Retrieving all minimal puzzle progress", async t => {
     try {
-        const puzzlesProgress = await findAllMinimalProgress(4365603)
+        const puzzlesProgress = await findAllMinimalProgress(t.context.cookies, 4365603)
 
         t.assert(puzzlesProgress[0] !== null)
     } catch (e){
