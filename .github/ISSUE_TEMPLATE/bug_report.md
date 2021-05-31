@@ -7,19 +7,19 @@ assignees: ''
 
 ---
 
-**Summarize the bug**
+**Summarize the bug**<br>
 A short and clear description of what the bug is.
 
-**To Reproduce**
+**To Reproduce**<br>
 Steps to reproduce the behavior:
 - first step
 - next step
 
-**Actual behavior**
+**Actual behavior**<br>
 A clear and concise description of what is actually happening.
 
-**Expected behavior**
+**Expected behavior**<br>
 A clear and concise description of what you expected to happen.
 
-**Additional context**
+**Additional context**<br>
 Add any other context about the problem here.
