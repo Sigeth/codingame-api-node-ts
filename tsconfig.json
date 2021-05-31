@@ -71,6 +71,8 @@
   },
   "typedocOptions": {
     "entryPoints": ["src/index.ts"],
-    "out": "docs"
+    "out": "docs",
+    "exclude": "**/*.spec.ts",
+    "excludeExternals": true
   }
 }

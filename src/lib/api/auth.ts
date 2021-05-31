@@ -110,7 +110,7 @@ type actionTypes = {
 }
 
 type actionTypesData = {
-    minCodinGamerCount: null | number
+    minCodinGamerCount: undefined | number
     authorPolicy: string
 }
 
@@ -118,7 +118,7 @@ type xpThresholds = {
     level: number
     xpThreshold: number
     cumulativeXp: number
-    rewardLanguages: rewardLanguages | null
+    rewardLanguages: rewardLanguages | undefined
 }
 
 type rewardLanguages = {

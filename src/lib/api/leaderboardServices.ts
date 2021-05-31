@@ -69,8 +69,8 @@ type leaderboardUser = {
     clash: number
     xp: number
     inProgress: boolean
-    school: string | null
-    company: string | null
+    school: string | undefined
+    company: string | undefined
     codingamer: codingamer
 }
 
@@ -97,8 +97,8 @@ type clashLeaderboardUser = {
     localRank: number
     score: number
     inProgress: boolean
-    school: string | null
-    company: string | null
+    school: string | undefined
+    company: string | undefined
     codingamer: codingamer
     clashesCount: number
 }
