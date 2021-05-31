@@ -8,5 +8,5 @@ assignees: ''
 ---
 
 **Add a new endpoint**<br>
-Please name the endpoint(s) that is/are not in the node, and add a link to them:
+Please name the endpoint(s) that is/are neither in the node nor in the Trello endpoints list, and add a link to them:
 - loginSite : https://www.codingame.com/services/CodinGamer/loginSite (that's an example)
