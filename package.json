@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/Sigeth/codingame-api-node-ts.git"
   },
-  "keywords": [ "codingame", "api", "typescript", "endpoints" ],
+  "keywords": [
+    "codingame",
+    "api",
+    "typescript",
+    "endpoints"
+  ],
   "author": "Sigeth",
   "license": "MIT",
   "bugs": {
