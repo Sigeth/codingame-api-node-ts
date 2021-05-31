@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import { urls, getCookies } from "../main"
+import { urls } from "../main"
 
 
 /**

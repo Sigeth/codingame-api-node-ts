@@ -1,6 +1,6 @@
 import axios from "axios"
 
-import { getCookies, urls } from "../main"
+import { urls } from "../main"
 
 /**
  * Find puzzle informations and player's completion from an array of number IDs.
