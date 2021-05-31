@@ -11,12 +11,16 @@ import {
 const test = anyTest as TestInterface<{ cookies: string }>
 
 test.before(async t => {
-    const storedCookies = fs.readFileSync("./src/config/cookies.json", "utf-8")
+    while(t.context.cookies === undefined){
+        try {
+            const storedCookies = fs.readFileSync("./src/config/cookies.json", "utf-8")
 
-    const parsedCookies = JSON.parse(storedCookies)
-    const cookies = parsedCookies.cookies
+            const parsedCookies = JSON.parse(storedCookies)
+            const cookies = parsedCookies.cookies
 
-    t.context.cookies = cookies
+            t.context.cookies = cookies
+        } catch (e) {}
+    }
 })
 
 test("Retrieving infos from several puzzles", async t => {
