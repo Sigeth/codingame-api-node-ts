@@ -4,7 +4,7 @@ import { urls } from "../main"
 
 
 /**
- * Get the pending clashes, games that wait players
+ * Get companies from a query
  * 
  * ## Requires to log in before.
  * 

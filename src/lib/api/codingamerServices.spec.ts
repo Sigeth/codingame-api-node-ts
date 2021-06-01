@@ -4,7 +4,7 @@ import {
     getCodingamerPointsStats
     } from "./codingamerServices"
 
-    const test = anyTest as TestInterface<{}>
+const test = anyTest as TestInterface<{}>
 
 test("Get codingamer stats and points", async t => {
     try {

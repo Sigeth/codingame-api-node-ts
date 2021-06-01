@@ -4,7 +4,7 @@ import {
     getPendingClashes
     } from "./cocServices"
 
-    const test = anyTest as TestInterface<{}>
+const test = anyTest as TestInterface<{}>
 
 test("Get the pending clashes", async t => {
     try {

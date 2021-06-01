@@ -6,7 +6,7 @@ import {
     getCompaniesByQuery
     } from "./companyServices"
 
-    const test = anyTest as TestInterface<{ cookies: string }>
+const test = anyTest as TestInterface<{ cookies: string }>
 
 test.before(async t => {
     while(t.context.cookies === undefined){

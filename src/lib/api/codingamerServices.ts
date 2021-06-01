@@ -4,7 +4,7 @@ import { urls } from "../main"
 
 
 /**
- * Get the pending clashes, games that wait players
+ * Get CodinGamer's stats and points
  * 
  * @param {string} publicId - public ID of the player
  * 
