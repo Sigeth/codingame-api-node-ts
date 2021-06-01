@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPastChallenge | codingame-api-node-ts</title>
+	<title>ICodingamerPointsStats | codingame-api-node-ts</title>
 	<meta name="description" content="Documentation for codingame-api-node-ts">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">codingame-api-node-ts</a>
 				</li>
 				<li>
-					<a href="ipastchallenge.html">IPastChallenge</a>
+					<a href="icodingamerpointsstats.html">ICodingamerPointsStats</a>
 				</li>
 			</ul>
-			<h1>Interface IPastChallenge</h1>
+			<h1>Interface ICodingamerPointsStats</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPastChallenge</span>
+						<span class="target">ICodingamerPointsStats</span>
 					</li>
 				</ul>
 			</section>
@@ -78,14 +78,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#applicationsclosed" class="tsd-kind-icon">applications<wbr>Closed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#cover1id" class="tsd-kind-icon">cover1<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#date" class="tsd-kind-icon">date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#descriptionjson" class="tsd-kind-icon">description<wbr>Json</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#endapplicationsdate" class="tsd-kind-icon">end<wbr>Applications<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#logoid" class="tsd-kind-icon">logo<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#publicid" class="tsd-kind-icon">public<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icodingamerpointsstats.html#achievementcount" class="tsd-kind-icon">achievement<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icodingamerpointsstats.html#codingamepointsrankingdto" class="tsd-kind-icon">codingame<wbr>Points<wbr>Ranking<wbr>Dto</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icodingamerpointsstats.html#codingamer" class="tsd-kind-icon">codingamer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icodingamerpointsstats.html#codingamerpoints" class="tsd-kind-icon">codingamer<wbr>Points</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="icodingamerpointsstats.html#xpthresholds" class="tsd-kind-icon">xp<wbr>Thresholds</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,82 +91,52 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="applicationsclosed" class="tsd-anchor"></a>
-					<h3>applications<wbr>Closed</h3>
-					<div class="tsd-signature tsd-kind-icon">applications<wbr>Closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="achievementcount" class="tsd-anchor"></a>
+					<h3>achievement<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">achievement<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L61">lib/api/challengeServices.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/codingamerServices.ts#L30">lib/api/codingamerServices.ts:30</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cover1id" class="tsd-anchor"></a>
-					<h3>cover1<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">cover1<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="codingamepointsrankingdto" class="tsd-anchor"></a>
+					<h3>codingame<wbr>Points<wbr>Ranking<wbr>Dto</h3>
+					<div class="tsd-signature tsd-kind-icon">codingame<wbr>Points<wbr>Ranking<wbr>Dto<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">pointsRankingDto</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L57">lib/api/challengeServices.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/codingamerServices.ts#L32">lib/api/codingamerServices.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="date" class="tsd-anchor"></a>
-					<h3>date</h3>
-					<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="codingamer" class="tsd-anchor"></a>
+					<h3>codingamer</h3>
+					<div class="tsd-signature tsd-kind-icon">codingamer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">codingamer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L55">lib/api/challengeServices.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/codingamerServices.ts#L31">lib/api/codingamerServices.ts:31</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="descriptionjson" class="tsd-anchor"></a>
-					<h3>description<wbr>Json</h3>
-					<div class="tsd-signature tsd-kind-icon">description<wbr>Json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="codingamerpoints" class="tsd-anchor"></a>
+					<h3>codingamer<wbr>Points</h3>
+					<div class="tsd-signature tsd-kind-icon">codingamer<wbr>Points<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L59">lib/api/challengeServices.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/codingamerServices.ts#L29">lib/api/codingamerServices.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="endapplicationsdate" class="tsd-anchor"></a>
-					<h3>end<wbr>Applications<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">end<wbr>Applications<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="xpthresholds" class="tsd-anchor"></a>
+					<h3>xp<wbr>Thresholds</h3>
+					<div class="tsd-signature tsd-kind-icon">xp<wbr>Thresholds<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">xpThreshold</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L60">lib/api/challengeServices.ts:60</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="logoid" class="tsd-anchor"></a>
-					<h3>logo<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">logo<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L58">lib/api/challengeServices.ts:58</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="publicid" class="tsd-anchor"></a>
-					<h3>public<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">public<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L56">lib/api/challengeServices.ts:56</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="title" class="tsd-anchor"></a>
-					<h3>title</h3>
-					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/challengeServices.ts#L54">lib/api/challengeServices.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3430166/src/lib/api/codingamerServices.ts#L33">lib/api/codingamerServices.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -194,48 +161,39 @@
 					<li class=" tsd-kind-interface">
 						<a href="iclashleaderboard.html" class="tsd-kind-icon">IClash<wbr>Leaderboard</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="icodingamerpointsstats.html" class="tsd-kind-icon">ICodingamer<wbr>Points<wbr>Stats</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icodingamerpointsstats.html#achievementcount" class="tsd-kind-icon">achievement<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icodingamerpointsstats.html#codingamepointsrankingdto" class="tsd-kind-icon">codingame<wbr>Points<wbr>Ranking<wbr>Dto</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icodingamerpointsstats.html#codingamer" class="tsd-kind-icon">codingamer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icodingamerpointsstats.html#codingamerpoints" class="tsd-kind-icon">codingamer<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="icodingamerpointsstats.html#xpthresholds" class="tsd-kind-icon">xp<wbr>Thresholds</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="igloballeaderboard.html" class="tsd-kind-icon">IGlobal<wbr>Leaderboard</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="ilogincodingamer.html" class="tsd-kind-icon">ILogin<wbr>Codin<wbr>Gamer</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="ipastchallenge.html" class="tsd-kind-icon">IPast<wbr>Challenge</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#applicationsclosed" class="tsd-kind-icon">applications<wbr>Closed</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#cover1id" class="tsd-kind-icon">cover1<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#date" class="tsd-kind-icon">date</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#descriptionjson" class="tsd-kind-icon">description<wbr>Json</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#endapplicationsdate" class="tsd-kind-icon">end<wbr>Applications<wbr>Date</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#logoid" class="tsd-kind-icon">logo<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#publicid" class="tsd-kind-icon">public<wbr>Id</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#title" class="tsd-kind-icon">title</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="ipendingclash.html" class="tsd-kind-icon">IPending<wbr>Clash</a>
 					</li>
