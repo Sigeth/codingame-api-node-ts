@@ -1,7 +1,19 @@
 import anyTest, { TestInterface } from 'ava'
 
-const test = anyTest as TestInterface<{}>
+import {
+    getPendingClashes
+    } from "./cocServices"
 
-test("void", async t => {
-    t.assert(true)
+    const test = anyTest as TestInterface<{}>
+
+test("Get the pending clashes", async t => {
+    try {
+
+        const pendingClashes = await getPendingClashes()
+        
+        t.assert(pendingClashes !== undefined)
+
+    } catch (e) {
+        console.log(e)
+    }
 })

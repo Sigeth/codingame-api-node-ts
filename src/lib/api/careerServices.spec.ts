@@ -21,7 +21,7 @@ test.before(async t => {
     }
 })
 
-test("Get the past challenges", async t => {
+test("Get the user's career data", async t => {
     try {
 
         const careerData = await getCareerData(t.context.cookies, 4365603)
