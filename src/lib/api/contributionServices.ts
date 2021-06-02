@@ -33,7 +33,7 @@ export const getPendingContributions = async (cookies: string, page: number, fil
 
 
 /**
- * Get every pending contributions, that wait to be validated
+ * Get a contribution by its id
  * 
  * @param {string} contributionId - Contribution's ID, found in the URL.
  * 

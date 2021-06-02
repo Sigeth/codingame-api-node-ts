@@ -4,7 +4,7 @@ import { urls } from "../main"
 
 
 /**
- * Get CodinGamer's stats and points
+ * Get every published courses by ids provided
  * 
  * ## Requires to log in before.
  * 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IClashLeaderboard | codingame-api-node-ts</title>
+	<title>IQuestMap | codingame-api-node-ts</title>
 	<meta name="description" content="Documentation for codingame-api-node-ts">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">codingame-api-node-ts</a>
 				</li>
 				<li>
-					<a href="iclashleaderboard.html">IClashLeaderboard</a>
+					<a href="iquestmap.html">IQuestMap</a>
 				</li>
 			</ul>
-			<h1>Interface IClashLeaderboard</h1>
+			<h1>Interface IQuestMap</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IClashLeaderboard</span>
+						<span class="target">IQuestMap</span>
 					</li>
 				</ul>
 			</section>
@@ -78,9 +78,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iclashleaderboard.html#count" class="tsd-kind-icon">count</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iclashleaderboard.html#filteredcount" class="tsd-kind-icon">filtered<wbr>Count</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iclashleaderboard.html#users" class="tsd-kind-icon">users</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iquestmap.html#links" class="tsd-kind-icon">links</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="iquestmap.html#nodes" class="tsd-kind-icon">nodes</a></li>
 							</ul>
 						</section>
 					</div>
@@ -89,32 +88,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="count" class="tsd-anchor"></a>
-					<h3>count</h3>
-					<div class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="links" class="tsd-anchor"></a>
+					<h3>links</h3>
+					<div class="tsd-signature tsd-kind-icon">links<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">link</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/43959d2/src/lib/api/leaderboardServices.ts#L89">lib/api/leaderboardServices.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/43959d2/src/lib/api/questServices.ts#L33">lib/api/questServices.ts:33</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="filteredcount" class="tsd-anchor"></a>
-					<h3>filtered<wbr>Count</h3>
-					<div class="tsd-signature tsd-kind-icon">filtered<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="nodes" class="tsd-anchor"></a>
+					<h3>nodes</h3>
+					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">node</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/43959d2/src/lib/api/leaderboardServices.ts#L90">lib/api/leaderboardServices.ts:90</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="users" class="tsd-anchor"></a>
-					<h3>users</h3>
-					<div class="tsd-signature tsd-kind-icon">users<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">clashLeaderboardUser</span><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/43959d2/src/lib/api/leaderboardServices.ts#L88">lib/api/leaderboardServices.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/43959d2/src/lib/api/questServices.ts#L32">lib/api/questServices.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -136,24 +125,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="ichallenge.html" class="tsd-kind-icon">IChallenge</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="iclashleaderboard.html" class="tsd-kind-icon">IClash<wbr>Leaderboard</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iclashleaderboard.html#count" class="tsd-kind-icon">count</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iclashleaderboard.html#filteredcount" class="tsd-kind-icon">filtered<wbr>Count</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="iclashleaderboard.html#users" class="tsd-kind-icon">users</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="icodingamerpointsstats.html" class="tsd-kind-icon">ICodingamer<wbr>Points<wbr>Stats</a>
 					</li>
@@ -190,9 +164,21 @@
 					<li class=" tsd-kind-interface">
 						<a href="ipuzzleprogress.html" class="tsd-kind-icon">IPuzzle<wbr>Progress</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="iquestmap.html" class="tsd-kind-icon">IQuest<wbr>Map</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iquestmap.html#links" class="tsd-kind-icon">links</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="iquestmap.html#nodes" class="tsd-kind-icon">nodes</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-variable">
 						<a href="../modules.html#urls" class="tsd-kind-icon">urls</a>
 					</li>
