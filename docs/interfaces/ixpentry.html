@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPastChallenge | codingame-api-node-ts</title>
+	<title>IXpEntry | codingame-api-node-ts</title>
 	<meta name="description" content="Documentation for codingame-api-node-ts">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">codingame-api-node-ts</a>
 				</li>
 				<li>
-					<a href="ipastchallenge.html">IPastChallenge</a>
+					<a href="ixpentry.html">IXpEntry</a>
 				</li>
 			</ul>
-			<h1>Interface IPastChallenge</h1>
+			<h1>Interface IXpEntry</h1>
 		</div>
 	</div>
 </header>
@@ -67,7 +67,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPastChallenge</span>
+						<span class="target">IXpEntry</span>
 					</li>
 				</ul>
 			</section>
@@ -78,14 +78,15 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#applicationsclosed" class="tsd-kind-icon">applications<wbr>Closed</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#cover1id" class="tsd-kind-icon">cover1<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#date" class="tsd-kind-icon">date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#descriptionjson" class="tsd-kind-icon">description<wbr>Json</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#endapplicationsdate" class="tsd-kind-icon">end<wbr>Applications<wbr>Date</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#logoid" class="tsd-kind-icon">logo<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#publicid" class="tsd-kind-icon">public<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ipastchallenge.html#title" class="tsd-kind-icon">title</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#achievement" class="tsd-kind-icon">achievement</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#codingamerid" class="tsd-kind-icon">codingamer<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#data" class="tsd-kind-icon">data</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#date" class="tsd-kind-icon">date</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#level" class="tsd-kind-icon">level</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#quest" class="tsd-kind-icon">quest</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#xphistoryid" class="tsd-kind-icon">xp<wbr>History<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#xppoints" class="tsd-kind-icon">xp<wbr>Points</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ixpentry.html#xpsource" class="tsd-kind-icon">xp<wbr>Source</a></li>
 							</ul>
 						</section>
 					</div>
@@ -94,22 +95,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="applicationsclosed" class="tsd-anchor"></a>
-					<h3>applications<wbr>Closed</h3>
-					<div class="tsd-signature tsd-kind-icon">applications<wbr>Closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="achievement" class="tsd-anchor"></a>
+					<h3>achievement</h3>
+					<div class="tsd-signature tsd-kind-icon">achievement<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">xpAchievement</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L61">lib/api/challengeServices.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L42">lib/api/xpServices.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="cover1id" class="tsd-anchor"></a>
-					<h3>cover1<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">cover1<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="codingamerid" class="tsd-anchor"></a>
+					<h3>codingamer<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">codingamer<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L57">lib/api/challengeServices.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L35">lib/api/xpServices.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="data" class="tsd-anchor"></a>
+					<h3>data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">xpData</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L40">lib/api/xpServices.ts:40</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -119,57 +130,57 @@
 					<div class="tsd-signature tsd-kind-icon">date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L55">lib/api/challengeServices.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L36">lib/api/xpServices.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="descriptionjson" class="tsd-anchor"></a>
-					<h3>description<wbr>Json</h3>
-					<div class="tsd-signature tsd-kind-icon">description<wbr>Json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="level" class="tsd-anchor"></a>
+					<h3>level</h3>
+					<div class="tsd-signature tsd-kind-icon">level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L59">lib/api/challengeServices.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L39">lib/api/xpServices.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="endapplicationsdate" class="tsd-anchor"></a>
-					<h3>end<wbr>Applications<wbr>Date</h3>
-					<div class="tsd-signature tsd-kind-icon">end<wbr>Applications<wbr>Date<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="quest" class="tsd-anchor"></a>
+					<h3>quest</h3>
+					<div class="tsd-signature tsd-kind-icon">quest<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">xpQuest</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L60">lib/api/challengeServices.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L41">lib/api/xpServices.ts:41</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="logoid" class="tsd-anchor"></a>
-					<h3>logo<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">logo<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="xphistoryid" class="tsd-anchor"></a>
+					<h3>xp<wbr>History<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">xp<wbr>History<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L58">lib/api/challengeServices.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L34">lib/api/xpServices.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="publicid" class="tsd-anchor"></a>
-					<h3>public<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">public<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="xppoints" class="tsd-anchor"></a>
+					<h3>xp<wbr>Points</h3>
+					<div class="tsd-signature tsd-kind-icon">xp<wbr>Points<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L56">lib/api/challengeServices.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L37">lib/api/xpServices.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="title" class="tsd-anchor"></a>
-					<h3>title</h3>
-					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="xpsource" class="tsd-anchor"></a>
+					<h3>xp<wbr>Source</h3>
+					<div class="tsd-signature tsd-kind-icon">xp<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/challengeServices.ts#L54">lib/api/challengeServices.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/Sigeth/codingame-api-node-ts/blob/3579e4a/src/lib/api/xpServices.ts#L38">lib/api/xpServices.ts:38</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -188,31 +199,34 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="ipastchallenge.html" class="tsd-kind-icon">IPast<wbr>Challenge</a>
+						<a href="ixpentry.html" class="tsd-kind-icon">IXp<wbr>Entry</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#applicationsclosed" class="tsd-kind-icon">applications<wbr>Closed</a>
+								<a href="ixpentry.html#achievement" class="tsd-kind-icon">achievement</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#cover1id" class="tsd-kind-icon">cover1<wbr>Id</a>
+								<a href="ixpentry.html#codingamerid" class="tsd-kind-icon">codingamer<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#date" class="tsd-kind-icon">date</a>
+								<a href="ixpentry.html#data" class="tsd-kind-icon">data</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#descriptionjson" class="tsd-kind-icon">description<wbr>Json</a>
+								<a href="ixpentry.html#date" class="tsd-kind-icon">date</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#endapplicationsdate" class="tsd-kind-icon">end<wbr>Applications<wbr>Date</a>
+								<a href="ixpentry.html#level" class="tsd-kind-icon">level</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#logoid" class="tsd-kind-icon">logo<wbr>Id</a>
+								<a href="ixpentry.html#quest" class="tsd-kind-icon">quest</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#publicid" class="tsd-kind-icon">public<wbr>Id</a>
+								<a href="ixpentry.html#xphistoryid" class="tsd-kind-icon">xp<wbr>History<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="ipastchallenge.html#title" class="tsd-kind-icon">title</a>
+								<a href="ixpentry.html#xppoints" class="tsd-kind-icon">xp<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ixpentry.html#xpsource" class="tsd-kind-icon">xp<wbr>Source</a>
 							</li>
 						</ul>
 					</li>
