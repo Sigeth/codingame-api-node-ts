@@ -19,7 +19,8 @@ export const urls = {
     school: "https://www.codingame.com/services/School/",
     testsession: "https://www.codingame.com/services/TestSession/",
     vote: "https://www.codingame.com/services/Vote/",
-    xp: "https://www.codingame.com/services/Xp/"
+    xp: "https://www.codingame.com/services/Xp/",
+    servlet: "https://www.codingame.com/servlet/"
 }
 
 /** @internal */
