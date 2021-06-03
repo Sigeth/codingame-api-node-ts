@@ -1,7 +1,35 @@
 import anyTest, { TestInterface } from 'ava'
 
-const test = anyTest as TestInterface<{}>
+const fs = require("fs")
 
-test("void", async t => {
-    t.assert(true)
+import {
+    startTestSession
+    } from "./testSessionServices"
+
+const test = anyTest as TestInterface<{ cookies: string }>
+
+test.before(async t => {
+    while(t.context.cookies === undefined){
+        try {
+            const storedCookies = fs.readFileSync("./src/config/cookies.json", "utf-8")
+
+            const parsedCookies = JSON.parse(storedCookies)
+            const cookies = parsedCookies.cookies
+
+            t.context.cookies = cookies
+        } catch (e) {}
+    }
+})
+
+
+test("Starts a test session", async t => {
+    try {
+
+        const testSession = await startTestSession(t.context.cookies, "39816023b3af66e1073d0715f46a950c1e89e998")
+
+        t.assert(testSession !== undefined)
+
+    } catch (e) {
+        console.log(e)
+    }
 })
