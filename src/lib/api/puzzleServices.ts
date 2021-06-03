@@ -77,6 +77,32 @@ export const findAllMinimalProgress = async (cookies: string, userId: number): P
 }
 
 
+/**
+ * Generate a Session ID from a puzzle's pretty ID
+ * 
+ * ## Requires to log in before.
+ * 
+ * @param {string} cookies - The cookies string that you obtain when you're loggin in with loginSite
+ * @param {number} userId - User ID you want to retrieve the completion
+ * @param {string} puzzlePrettyId - Puzzle's Pretty ID
+ * 
+ */
+
+ export const generateSessionFromPuzzlePrettyId = async (cookies: string, userId: number, puzzlePrettyId: string): Promise<IPuzzleSession> => {
+
+    const response = await axios({
+        url: urls.puzzle + "generateSessionFromPuzzlePrettyId",
+        method: "post",
+        headers: {
+            "content-type": "application/json;charset=UTF-8",
+            "cookie": cookies
+        },
+        data: [ userId, puzzlePrettyId, false ]
+    })
+
+    return response["data"]
+}
+
 
 export interface IPuzzleProgress {
     id: number
@@ -189,4 +215,10 @@ export interface IPuzzleMinimalProgress {
     solvedCount: number
     communityCreation: boolean
     feedback: feedbackPuzzle
+}
+
+export interface IPuzzleSession {
+    reportReady: boolean
+    handle: string
+    direct: boolean
 }

@@ -5,7 +5,8 @@ const fs = require("fs")
 import { 
     findProgressByIds,
     findAllMinimalProgress,
-    findProgressByPrettyId
+    findProgressByPrettyId,
+    generateSessionFromPuzzlePrettyId
     } from "./puzzleServices"
 
 const test = anyTest as TestInterface<{ cookies: string }>
@@ -48,6 +49,16 @@ test("Retrieving all minimal puzzle progress", async t => {
         const puzzlesProgress = await findAllMinimalProgress(t.context.cookies, 4365603)
 
         t.assert(puzzlesProgress[0] !== null)
+    } catch (e){
+        console.log(e)
+    }
+})
+
+test("Generate a session from a puzzle pretty ID", async t => {
+    try {
+        const puzzleSession = await generateSessionFromPuzzlePrettyId(t.context.cookies, 4365603, "the-descent")
+
+        t.assert(puzzleSession !== null)
     } catch (e){
         console.log(e)
     }
