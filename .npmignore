@@ -3,3 +3,4 @@ tsconfig.json
 .env
 **/*.spec.*
 .github
+docs

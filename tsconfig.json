@@ -74,6 +74,7 @@
     "out": "docs",
     "exclude": "**/*.spec.ts",
     "excludeExternals": true,
-    "excludeInternal": true
+    "excludeInternal": true,
+    "logLevel": "Verbose"
   }
 }
