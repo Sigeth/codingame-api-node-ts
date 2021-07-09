@@ -24,6 +24,27 @@ export const getCodingamerPointsStats = async (publicId: string): Promise<ICodin
     return response["data"]
 }
 
+/**
+ * Get CodinGamer's achievements
+ * 
+ * @param {number} userId - User's ID
+ * 
+ */
+
+export const getCodingamerAchievements = async (userId: number): Promise<ICodingamerAchievement[]> => {
+    
+    const response = await axios({
+        url: urls.achievement + "findByCodingamerId",
+        method: "post",
+        headers: {
+            "content-type": "application/json;charset=UTF-8"
+        },
+        data: [ userId ]
+    })
+
+    return response["data"]
+}
+
 
 export interface ICodingamerPointsStats {
     codingamerPoints: number
@@ -89,4 +110,20 @@ type xpThreshold = {
     level: number
     xpThreshold: number
     cumulativeXp: number
+}
+
+export interface ICodingamerAchievement {
+    id: string
+    puzzleId: number
+    title: string
+    description: string
+    points: number
+    progress: number
+    progressMax: number
+    completionTime: number
+    imageBinaryId: number
+    categoryId: string
+    groupId: string
+    level: string
+    weight: number
 }
