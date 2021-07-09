@@ -28,6 +28,31 @@ export const startTestSession = async (cookies: string, sessionHandle: string): 
     return response["data"]
 }
 
+/**
+ * Generates a LSP token encoded in base64 from a test session Id
+ * 
+ * ## Requires to log in before.
+ * 
+ * @param {string} cookies - The cookies string that you obtain when you're logging in with loginCodinGamer
+ * @param {number} testSessionId - Test Session Id where the user is currently in
+ * 
+ */
+
+ export const generateLspToken = async (cookies: string, testSessionId: number): Promise<ILspToken> => {
+    
+    const response = await axios({
+        url: urls.testsession + "generateLspToken",
+        method: "post",
+        headers: {
+            "content-type": "application/json;charset=UTF-8",
+            "cookie": cookies
+        },
+        data: [ testSessionId ]
+    })
+
+    return {token: response["data"]}
+}
+
 
 export interface ITestSession {
     puzzle: puzzle
@@ -35,7 +60,7 @@ export interface ITestSession {
     currentQuestion: currentQuestion
     direct: boolean
     questions: question[]
-    testSesionId: number
+    testSessionId: number
     testSessionHandle: string
     needAccount: boolean
     shareable: boolean
@@ -100,4 +125,8 @@ type question = {
     questionId: number
     title: string
     hasResult: boolean
+}
+
+export interface ILspToken {
+    token: string
 }
