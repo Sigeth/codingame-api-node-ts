@@ -4,7 +4,8 @@ const fs = require("fs")
 
 import {
     startTestSession,
-    generateLspToken
+    generateLspToken,
+    getPreviousCodeByLanguageId
     } from "./testSessionServices"
 
 const test = anyTest as TestInterface<{ cookies: string }>
@@ -33,6 +34,18 @@ test("Starts a test session and then generates a LSP Token", async t => {
         const lspToken = await generateLspToken(t.context.cookies, testSession.testSessionId)
 
         t.assert(lspToken !== undefined)
+
+    } catch (e) {
+        console.log(e)
+    }
+})
+
+test("Retrieves the previous code of a puzzle", async t => {
+    try {
+
+        const previousCode = await getPreviousCodeByLanguageId(t.context.cookies, "3967834641125caca5dd754076019714205e5961", "C++")
+
+        t.assert(previousCode !== undefined)
 
     } catch (e) {
         console.log(e)
